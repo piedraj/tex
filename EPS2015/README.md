@@ -1,5 +1,5 @@
 
-    git clone https://github.com/piedraj/EPS20015.git
-    cd EPS20015
+    git clone https://github.com/piedraj/tex.git
+    cd tex/EPS2015
     pdflatex piedra.tex
 
