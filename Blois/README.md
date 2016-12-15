@@ -19,4 +19,5 @@ Compile and clean
 Wrap it
 ====
 
+    cd ..
     tar -czvf piedra.tgz Blois
