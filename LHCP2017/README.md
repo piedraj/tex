@@ -1,7 +1,7 @@
 Compile and clean
 ====
 
-    cd tex/Blois2016
+    cd tex/LHCP2017
     pdflatex piedra.tex
     pdflatex piedra.tex
 
@@ -14,5 +14,5 @@ Wrap it
 ====
 
     cd ..
-    tar -czvf piedra.tgz Blois2016
+    tar -czvf piedra.tgz LHCP2017
 
