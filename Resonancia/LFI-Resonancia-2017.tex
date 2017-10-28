@@ -50,7 +50,7 @@ radianes por segundo,
 $$\omega = 2\pi\nu = {2\pi\over T}\,,$$
 y $\alpha$ la fase inicial, que tambi\'en depende de las condiciones iniciales.
 Para la velocidad de la part\'icula se tiene que
-$$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) = \omega A\,  \cos \, (\omega t + \alpha + {\pi\over 2}) \, .$$
+$$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) = \omega A\,  \cos \, (\omega t + \alpha + {\pi/2}) \, .$$
 
 \begin{figure}[htb]
 \begin{center}
@@ -58,20 +58,20 @@ $$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) =
 \includegraphics[width=8.5cm]{figuras/PENDULO-MATEMATICO.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:pendulmat} {\it P\'endulo matem\'atico}. Una bola pesada unida a una barra ligera oscila, aproximadamente, en forma arm\'onica.}
+\caption[]{\label{fig:pendulmat}{\it P\'endulo matem\'atico}. Una bola pesada unida a una barra ligera oscila, aproximadamente, en forma arm\'onica.}
 \end{figure}
-
 
 La variaci\'on de la velocidad adelanta en fase a la variaci\'on de la posici\'on. 
 Conocidas las condiciones iniciales $x(0) = x_0$ y $v(0)=v_0$, se determinan $A$ y $\alpha$ para el sistema dado.
 Para la aceleraci\'on de la part\'icula se tiene
 $$ a (t) = {{\rm d} v(t)\over {\rm d} t}= -\omega^2 A \, \cos \, (\omega t + \alpha) \, .$$
 Multiplicando la aceleraci\'on por la masa, se tiene que
-$$F (t) = - m a(t) = - m \omega^2 x(t)\, .$$
-Por tanto, para que la part\'icula realice oscilaciones arm\'onicas, la fuerza que act\'ua sobre ella, debe ser proporcional al desplazamiento de la part\'icu\-la y debe estar dirigida en sentido opuesto a ese desplazamiento. Este tipo de fuerza se denomina {\it fuerza recuperadora} y es caracter\'istica de los movimientos oscilatorios. La ecuaci\'on diferencial caracter\'istica de una oscilaci\'on arm\'onica es
+$$F (t) = m a(t) = - m \omega^2 x(t)\, .$$
+Por tanto, para que la part\'icula realice oscilaciones arm\'onicas, la fuerza que act\'ua sobre ella debe ser proporcional al desplazamiento de la part\'icu\-la y debe estar dirigida en sentido opuesto a ese desplazamiento. Este tipo de fuerza se denomina {\it fuerza recuperadora} y es caracter\'istica de los movimientos oscilatorios. La ecuaci\'on diferencial caracter\'istica de una oscilaci\'on arm\'onica es
 $${{\rm d}^2 x(t) \over {\rm d} t^2} + \omega^2 x(t) = 0\, .$$
 Para una fuerza caracter\'istica $F = - k  x (t)$, se tendr\'a que $\omega^2 = k/m$.
-Las oscilaciones de un sistema que despu\'es de recibir un impulso inicial, que incorpora cierta energ\'ia al sistema, se abandona a s\'i mismo, se denominan {\it oscilaciones propias}.  
+Las oscilaciones de un sistema que, despu\'es de recibir un impulso inicial\footnote{Un impulso inicial incorporar\'a cierta energ\'ia al sistema.},
+se abandona a s\'i mismo, se denominan {\it oscilaciones propias}.  
 
 Para la energ\'ia potencial de la part\'icula oscilante, se tiene que
 $${{\rm d} E_{\rm P} (x) \over {\rm d} x}= - F = k x\, .$$
@@ -83,14 +83,14 @@ La energ\'ia total es proporcional al cuadrado de la amplitud. Y como la amplitu
 
 En esta descripci\'on energ\'etica, y en ausencia de procesos de amortiguaci\'on, el proceso de oscilaci\'on est\'a relacionado con el paso peri\'odico de la energ\'ia potencial -- m\'axima en los extremos -- a cin\'etica -- m\'axima en el centro de la oscilaci\'on -- y viceversa.
 El valor medio, por per\'iodo de oscilaci\'on, de las energ\'ias potencial y cin\'etica 
-$${\bar K}  = {1\over T}\int_0^T {1\over 2}m v^2(t) {\rm d} t \, ; \, \, {\bar E_{\rm P}}  = {1\over T}\int_0^T {1\over 2}k x^2(t) {\rm d} t \, ,$$
+$${\bar K}  = {1\over T}\int_0^T {1\over 2}m v^2(t) {\rm d} t \,;\,\, {\bar E_{\rm P}}  = {1\over T}\int_0^T {1\over 2}k x^2(t) {\rm d} t \, ,$$
 es el mismo\footnote{Este resultado se puede explicar utilizando el principio de equipartici\'on de la energ\'ia: la energ\'ia mec\'anica no se acumula, en promedio, en ningun modo de forma especial y se reparte equitativamente entre todos los modos posibles.} e igual cada uno de ellos a ${\bar K} = {\bar E_{\rm P}}=E/2$. 
 
 
 
-\section{Equilibrios: estable e inestable.}
+\section{Equilibrios estable e inestable}
 
-El fen\'omeno de las oscilaciones de un cuerpo alrededor de un punto siempre se produce a partir de un sistema en {\it equilibrio estable} que es perturbado, es decir, apartado de su estado de equilibrio proporcion\'andole cierta energ\'ia, de tal manera que las fuerzas que aparecen son siempre de car\'acter {\it recuperador}, intentando devolver al sistema a su estado de equilibrio.  
+El fen\'omeno de las oscilaciones de un cuerpo alrededor de un punto siempre se produce a partir de un sistema en {\it equilibrio estable} que es perturbado, es decir, apartado de su estado de equilibrio proporcion\'andole cierta energ\'ia, de tal ma\-nera que las fuerzas que aparecen son siempre de car\'acter {\it recuperador}, intentando devolver al sistema a su estado de equilibrio.  
 
 \begin{figure}[htb]
 \begin{center}
@@ -98,21 +98,22 @@ El fen\'omeno de las oscilaciones de un cuerpo alrededor de un punto siempre se 
 \includegraphics[width=9.5cm]{figuras/EQUILIBRIO-ESTABLE.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:equilest} Equilibrio estable}
+\caption[]{\label{fig:equilest}{\it Equilibrio estable.}}
 \end{figure}
 
 
-El sistema se encuentra en un m\'inimo de un potencial que puede aproximarse, en general, y cerca del centro,  como una par\'abola\footnote{La fuerza correspondiente se puede aproximar, en ese caso, por una l\'inea recta.}. Cuando se perturba el sistema,  se le proporciona energ\'ia asciende en la par\'abola y oscila alrededor del centro, en ausencia de fricci\'on, con dos puntos extremos.
+El sistema se encuentra en un m\'inimo de un potencial que puede aproximarse, en general, y cerca del centro,  como una par\'abola\footnote{La fuerza correspondiente se puede aproximar, en ese caso, por una l\'inea recta.}. Cuando se perturba el sistema se le proporciona energ\'ia, asciende en la par\'abola y oscila alrededor del centro, en ausencia de fricci\'on, con dos puntos extremos.
 
 En un equilibrio estable el sistema se sit\'ua en un m\'inimo de un potencial, por lo que su derivada primera en ese punto es cero. 
 Desarrollando la curva en serie de Taylor alrededor del punto de equilibrio, se tiene que para un potencial de par\'abola c\'oncava hacia arriba:
 $$E_{\rm P}(x) = +{1\over 2}\Big| {{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, .$$
-Con la segunda ley de Newton,  $ m a = - {\rm grad} \, E_{\rm P}(x)$, expresada como:
-$$m {{\rm d} x^2\over {\rm d} t^2} = - \Big|{{\rm d} E_{\rm P}(x)\over {\rm d} x}\Big|\, ,$$
+Con la segunda ley de Newton expresada como
+%%%,  $ m a = - {\rm grad} \, E_{\rm P}(x)$, expresada como:
+$$m {{\rm d} x^2\over {\rm d} t^2} = - {{\rm d} E_{\rm P}(x)\over {\rm d} x}\, ,$$
 se tiene la ecuaci\'on diferencial del movimiento
-$$ {{\rm d} (x-x_{\rm e})^2\over {\rm d} t^2} + \omega^2 (x-x_{\rm e}) = 0\, ; \omega^2 = m^{-1}{{\rm d}^2 V(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
+$$ {{\rm d} (x-x_{\rm e})^2\over {\rm d} t^2} + \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
 Una posible soluci\'on\footnote{La funci\'on $f(x) = {\rm sin} \, x$ tiene la propiedad de que su segunda derivada es la misma funci\'on cambiada de signo $f''(x) = - f(x)$. La misma propiedad tiene la funci\'on ${\rm cos}\, x$.} de esta ecuaci\'on diferencial es de la forma
-$$(x-x_{\rm e})(t) = A\,  \sin\, (\omega t + \phi)\, ; (x-x_{\rm e})(t) = A\,  \cos\, (\omega t + \phi') $$
+$$(x-x_{\rm e})(t) = A\,  \sin\, (\omega t + \phi) \,;\,\, (x-x_{\rm e})(t) = A\,  \cos\, (\omega t + \phi') $$
 donde $A$ -- que depende de la energ\'ia inicial de la perturbaci\'on --  es la amplitud de la oscilaci\'on, $\omega = 2\pi/T$ es su frecuencia angular -- que depender\'a de condiciones geom\'etricas y f\'isicas --, $T$ es el per\'iodo y $\phi$ la fase inicial.\\ 
 
 \begin{figure}[htb]
@@ -121,16 +122,16 @@ donde $A$ -- que depende de la energ\'ia inicial de la perturbaci\'on --  es la 
 \includegraphics[width=9.5cm]{figuras/EQUILIBRIO-INESTABLE.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:equilinest} Equilibrio inestable}
+\caption[]{\label{fig:equilinest}{\it Equilibrio inestable.}}
 \end{figure}
 
-En un equilibrio inestable el sistema se sit\'ua en un m\'aximo de un potencial. Cuando el sistema se perturba, las fuerzas son tales que alejan el sistema del equilibrio.
+En un equilibrio inestable el sistema se sit\'ua en un m\'aximo de un potencial. Cuando el sistema se perturba las fuerzas son tales que alejan el sistema del equilibrio.
 Se tiene que para un potencial de par\'abola c\'oncava hacia abajo:
-$$E_{\rm P}(x) = -{1\over 2}\Big| {{\rm d}^2 V(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, ,$$
-con la Segunda Ley de Newton expresada como:
-$$m {{\rm d} x^2\over {\rm d} t^2} = - \Big|{{\rm d}  E_{\rm P}(x)\over {\rm d}  x}\Big|\, ,$$
-se tiene que:
-$$ {{\rm d} (x-x_{\rm e})^2\over {\rm d} t^2} - \omega^2 (x-x_{\rm e}) = 0\, ; \omega^2 = m^{-1}{{\rm d}^2 V(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
+$$E_{\rm P}(x) = -{1\over 2}\Big| {{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, .$$
+Con la Segunda Ley de Newton expresada como
+$$m {{\rm d} x^2\over {\rm d} t^2} = - {{\rm d}  E_{\rm P}(x)\over {\rm d}  x}\, ,$$
+se tiene
+$$ {{\rm d} (x-x_{\rm e})^2\over {\rm d} t^2} - \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
 La soluci\'on\footnote{La funci\'on $g(x) = \exp  \, x$ tiene la propiedad de que su segunda derivada es la misma funci\'on $f''(x) =  f(x)$.} de esta ecuaci\'on diferencial es:
 $$(x-x_{\rm e})(t) = A\,  \exp\, (\omega t + \phi)\, .$$
 El sistema se aleja del equilibrio una vez es perturbado.\\
@@ -182,7 +183,8 @@ $$T = 2 \pi \sqrt{m L^2/3 \over m (L/2) g}= 2 \pi \sqrt{ 2 L   \over 3 g}\, .$$
 \includegraphics[width=11.5cm]{figuras/OSCILAR-ANILLO-ALGODOO-BIS.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:anillooscila} {Izq. Anillo que oscila sobre un soporte colocado en su parte superior interna. Dcha. Disco con el mismo radio que el anillo.}}
+\caption[]{\label{fig:anillooscila}{(Izquierda) Anillo que oscila sobre un soporte colocado
+    en su parte superior interna. (Derecha) Disco con el mismo radio que el anillo.}}
 \end{figure}
 
 
@@ -234,7 +236,7 @@ Cuando $\alpha = 1,31$ rad (75 $^\circ$), $\cos \, \alpha = 0,25$ y el per\'iodo
 \includegraphics[width=6.15cm]{figuras/PENDULO-TORSION.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:pentorsi} P\'endulo de torsi\'on.}
+\caption[]{\label{fig:pentorsi}{\it P\'endulo de torsi\'on.}}
 \end{figure}
 
 \item {\bf P\'endulo de torsi\'on.} Para un p\'endulo de torsi\'on --un muelle unido a una plataforma--, el \'angulo es proporcional al torque aplicado.  
@@ -354,7 +356,7 @@ para el muelle verde.  Puesto que el soporte tiene $h=0,5$~m de altura, se debe 
 \includegraphics[width=9.0cm]{figuras/DOS-BOLAS-MUELLE-NO-AMORTIG.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:dsblmllnmrt} {\it Dos bolas que oscilan en los extremos de un muelle.} Cada bola ejecuta un movimiento arm\'onico simple no amortiguado.}
+\caption[]{\label{fig:dsblmllnmrt}{\it Dos bolas que oscilan en los extremos de un muelle.} Cada bola ejecuta un movimiento arm\'onico simple no amortiguado.}
 \end{figure}
 
 %\item {\bf Combinaciones de muelles.} Muelles de distinta constante elástica, $k_i$ se pueden combinar, en serie, uno detrás de otro, o en paralelo. En el equilibrio después de colgar una masa $m$ del extremo libre de los muelles
@@ -398,7 +400,7 @@ La constante del muelle se estima considerando una longitud en reposo de $l_0 = 
 \includegraphics[width=9.5cm]{figuras/OSCILACIONES-AMORTIGUADAS.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:oscilamortig} {\it Oscilaciones amortiguadas.} Dos bolas
+\caption[]{\label{fig:oscilamortig}{\it Oscilaciones amortiguadas.} Dos bolas
   colocadas en los extremos de un resorte oscilan de forma amortiguada. Toda la
   energ\'ia el\'astica inicial del resorte se disipa.}
 \end{figure}
@@ -591,7 +593,8 @@ Las oscilaciones no amortiguadas pueden excitarse no s\'olo por una fuerza peri\
 \includegraphics[width=11.5cm]{figuras/RESONANCIA-PARAMETRICA.png}
 \end{center}
 \vspace*{-0.6cm}
-\caption[]{\label{fig:resoparame} {\it Resonancia param\'etrica.} Un p\'endulo oscila al final de una cadena que cada cierto tiempo es acortada. Si el per\'iodo de acortamiento de la cadena y el per\'iodo propio del p\'endulo se sincronizan, el p\'endulo entrar\'a en resonancia.}
+\caption[]{\label{fig:resoparame}{\it Resonancia param\'etrica.} Un p\'endulo oscila al final de una cadena que cada cierto tiempo es acortada.
+  Si el per\'iodo de acortamiento de la cadena y el per\'iodo propio del p\'endulo se sincronizan, el p\'endulo entrar\'a en resonancia.}
 \end{figure}
 
 En un columpio, la persona que oscila puede mantener, e incluso aumentar, la amplitud de su oscilaci\'on si cuando alcanza la m\'inima altura recoge las piernas bajo el asiento. Con este movimiento, la persona hace que se eleve su centro de gravedad disminuyendo su momento de inercia. Puesto que en ese punto se conserva el momento angular, aumenta su velocidad angular y su energ\'ia cin\'etica de rotaci\'on,  incorporando energ\'ia al sistema y haciendo que aumente la amplitud de la oscilaci\'on. Esta energ\'ia cin\'etica adicional proviene, por supuesto, del trabajo que realizan sus m\'usculos contra la gravedad para elevar las piernas\footnote{Si la persona est\'a de pie sobre el asiento del columpio, debe elevarse en la posici\'on baja y agacharse en las posiciones altas.}.
