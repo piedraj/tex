@@ -157,11 +157,11 @@ Los diversos tipos de p\'endulos son paradigmas de sistemas oscilantes.
 
 \begin{enumerate}
 
-\item {\bf P\'endulo matem\'atico}. Por ejemplo, una bola de plomo colgada de un hilo de  pescar. 
+\item {\bf P\'endulo matem\'atico.} Por ejemplo, una bola de plomo colgada de un hilo de  pescar. 
 La ecuaci\'on para un p\'endulo matem\'atico (aproximaci\'on de \'angulo peque\~no) viene dada por
 $$\theta (t) = \theta_0\,  \sin\, (\omega t + \phi)\, .$$
 Si a tiempo $t=0$ el p\'endulo se encuentra en el \'angulo $\theta = \theta_i$ y 
-se mueve con velocidad angular $\omega = \omega_i$, se tienen las ecuaciones:
+se mueve con velocidad angular $\omega_i$, se tienen las ecuaciones:
 \begin{eqnarray}
 \theta_i &=& \theta_0\,  \sin\,  \phi \, ,\nonumber\\
 \omega_i &=& \theta_0 \, \omega\,  \cos\, \phi \, .\nonumber
@@ -173,9 +173,11 @@ $$T = 2 \pi \sqrt{l\over g}\, .$$
 %\item Demostrar que dos p\'endulos de igual longitud pero con diferentes masas puntuales tienen (aproximadamente) el mismo per\'iodo.
 
 \item {\bf P\'endulo f\'isico.}  Per\'iodo de un p\'endulo f\'isico en forma de barra
-(momento de inercia respecto de un eje perpendicular que pasa por su centro, $I_0 = {1\over 12}mL^2$, y momento de inercia respecto de un eje perpendicular que pasa por uno de sus extremos, $I={1\over 3}mL^2$):
-$$T = 2 \pi \sqrt{m L^2/3 \over m (L/2) g}= 2 \pi \sqrt{ 2 L   \over 3 g}\, .$$
-(Demostrar que esta ecuaci\'on para $T$ es dimensionalmente correcta). Tiene un per\'iodo menor que el de un p\'endulo matem\'atico de la misma longitud.
+(momento de inercia respecto de un eje perpendicular que pasa por su centro, $I_0 = {1\over 12}mL^2$, y momento de inercia respecto de un eje perpendicular que pasa por uno de sus extremos, $I'= m L^2/3$):
+$$T = 2\pi \sqrt{I \over mg d} = 2\pi \sqrt{m L^2/3 \over mg (L/2)} = 2\pi \sqrt{2L \over 3g}\, ,$$
+donde $I$ es el momento de inercia respecto al punto de apoyo o suspensi\'on, y $d$ es la distancia del punto de suspensi\'on al centro de masas.
+%%%(Demostrar que esta ecuaci\'on para $T$ es dimensionalmente correcta).
+Tiene un per\'iodo menor que el de un p\'endulo matem\'atico de la misma longitud.
 
 \begin{figure}[htb]
 \begin{center}
@@ -194,12 +196,12 @@ Un anillo oscila con un per\'iodo $T$ dado por
 $$T = 2 \pi \sqrt{I \over m g d}\, ,$$
 donde
 $I= I_0 + m R^2 = 2 m R^2$ y $d = R$. Se tiene
-$$T_{\rm A} = 2 \pi \sqrt{2R \over g}\, .$$
+$$T_{\rm anillo} = 2 \pi \sqrt{2R \over g}\, .$$
 Un anillo de radio $R$ oscila con el mismo per\'iodo que un p\'endulo matem\'atico de longitud su di\'ametro, $L=2R$.
 
 {\bf Oscilaciones de un disco.}
 Para un disco, $I=I_0 + m R^2 = {3\over 2} m R^2$ y $d= R$.
-$$T_{\rm A} = 2 \pi \sqrt{3R/2 \over g}\, .$$
+$$T_{\rm disco} = 2 \pi \sqrt{3R/2 \over g}\, .$$
 Su per\'iodo es menor, es decir, oscila m\'as rapidamente, que el de un anillo con el mismo radio.
 
 %PŽndulo PASCO --barra m‡s dos pesas-- conectado a un ordenador:
@@ -208,7 +210,7 @@ Su per\'iodo es menor, es decir, oscila m\'as rapidamente, que el de un anillo c
 
 \newpage
 
-\item {\bf El tentetieso como un p\'endulo f\'isico}.
+\item {\bf El tentetieso como un p\'endulo f\'isico.}
 
 %Se comienza describiendo un tentetieso tipo payaso, en el que se vea bien que la estabilidad se consigue haciendo que el
 %centro de gravedad se sitœe por debajo del punto de apoyo. Se compara entonces este tentetieso y esta condici—n de equilibrio estable 
@@ -216,8 +218,7 @@ Su per\'iodo es menor, es decir, oscila m\'as rapidamente, que el de un anillo c
 %anterior. Lo que se observa es que la condici—n de equilibrio estable en tentetiesos es que siempre que  el equilibrio se perturbe el centro de gravedad
 %ascienda, con lo que tienda a descender. Si en el proceso el centro de gravedad desciende, entonces seguir‡ descendiendo y el equilibrio ya no ser‡ estable. 
 
-\begin{enumerate}
-\item Estudiar los per\'iodos de los dos modos normales del tentetieso \'aguila. Para la primera oscilaci\'on, la distancia al eje de giro es de unos $l_1=6,5$~cm. La distancia entre el punto de apoyo y el centro de gravedad se estima en $d=1$~cm. Para la oscilaci\'on m\'as r\'apida, la distancia al eje se estima en unos $l_2=2,5$~cm.
+Estudiar los per\'iodos de los dos modos normales del tentetieso \'aguila. Para la primera oscilaci\'on, la distancia al eje de giro es de unos $l_1=6,5$~cm. La distancia entre el punto de apoyo y el centro de gravedad se estima en $d=1$~cm. Para la oscilaci\'on m\'as r\'apida, la distancia al eje se estima en unos $l_2=2,5$~cm.
 
 Con estos datos
 $$T_1 = 2 \pi \left({ml_1^2\over m g d}\right)^{1/2}\approx 1,2~{\rm s}\, .$$
@@ -225,7 +226,7 @@ Para 10 per\'iodos se esperan unos 12~s.
 Para la oscilaci\'on r\'apida, 
 $$T_2 = 2 \pi \left({ml_2^2\over m g d} \right)^{1/2} \approx 0,5~{\rm s}\, .$$
 
-\end{enumerate}
+
 \item {\bf P\'endulo de gravedad variable.} Calcular y medir el per\'iodo de un p\'endulo de gravedad variable:
 $$T (\alpha) = 2 \pi \sqrt{l\over g (\alpha)}\, ;  g(\alpha) = g \, {\rm cos}\,  \alpha$$
 Cuando $\alpha = 1,31$ rad (75 $^\circ$), $\cos \, \alpha = 0,25$ y el per\'iodo debe ser el doble que cuando el p\'endulo se encuentra en vertical.
