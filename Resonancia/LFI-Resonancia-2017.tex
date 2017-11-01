@@ -437,7 +437,7 @@ $\gamma$ se relaciona con el intervalo de tiempo
 en el que la amplitud de la oscilaci\'on se ve dividida por $e$, o que la energ\'ia total del sistema 
 se ve dividida por $e^2$. Como tambi\'en se tiene que
 $$\omega^2 = \omega_0^2 - \gamma^2\,,$$
-si $\gamma^2 \ll \omega_0^2$, el sistema perder\'a energ\'ia lentamente y se podr\'ia considerar la oscilaci\'on como no amortiguada, con $\omega \approx \omega_0$.
+si $\gamma^2 \ll \omega_0^2$, el sistema perder\'a energ\'ia lentamente y se podr\'ia considerar la oscilaci\'on como no amortiguada, con $\omega \approx \omega_0$.\\
 
 {\bf Principio del m\'inimo de la energ\'ia potencial.}
 En aquellos fen\'omenos oscilantes en los que intervienen fuerzas de rozamiento, el sistema alcanza una posici\'on de equilibrio estable y ausencia de movimiento.
@@ -462,7 +462,6 @@ En la situaci\'on ideal de completa ausencia de rozamiento, el sistema oscilar\'
 
 Todos los sistemas que oscilan pueden experimentar el fen\'omeno de la resonancia.  
 %Si el sistema oscilante, con una frecuencia natural $\omega_0$ es perturbado desde el esterior por un sistema que ejerce una fuerza también oscilante y con la frecuencia $\omega_0$, la fuerza externa aumentará en cada período la energía del sistema, que variará su amplitud y que, en ausencia de rozamiento, puede llegar a tener una amplitud tan grande que se destruya.
-
 En presencia de una fuerza forzante aplicada con frecuencia angular ${\tilde \omega}$, sobre el sistema, y en ausencia de rozamiento, se tiene la segunda ley de Newton
 $$F_0 \sin {\tilde \omega} t - k x  = m {{\rm d}^2 x \over {\rm d} t^2}\, .$$
 Las soluciones de esta ecuaci\'on vienen dadas por
@@ -477,7 +476,7 @@ $$F_0 \sin {\tilde \omega} t - k x  - b {{\rm d} x \over {\rm d} t} = m {{\rm d}
 Las soluciones de esta ecuaci\'on vienen dadas por
 $$x(t) = A \cos ({\tilde \omega} t + \phi)\, ,$$
 con la amplitud $A$ del estado estacionario dada por
-$$A = {F_0/m \over \sqrt{\left({{\tilde \omega}}^2 - \omega_0^2\right)^2 + \left({b {\tilde \omega}/ m}\right)^2}}\, .$$
+$$A = {F_0/m \over \sqrt{\left({{\tilde \omega}}^2 - \omega_0^2\right)^2 + 4{\tilde \omega}^2\gamma^2}}\, .$$
 La fuerza forzante termina por imponer su frecuencia al sistema, pero, incluso para ${\tilde \omega} = \omega_0$, termina por alcanzarse una amplitud tal que la energ\'ia que cede la fuerza forzante al sistema se disipa por rozamiento (trabajo disipativo o calor) al exterior.\\ 
 
 
@@ -528,25 +527,30 @@ El movimiento oscilatorio del carrito forzado se puede amortiguar con un im\'an 
 \subsection{Ondas sonoras}
 
 La velocidad de propagaci\'on del sonido en el seno de un cuerpo viene dada por
-$$v_{\mathrm S}=\left({K\over \rho}\right)^{1/2}\, ,$$
+$$v_{\mathrm S}=\sqrt{K\over \rho}\,,$$
 donde se tiene el coeficiente
-$$K = V \left({\partial P\over \partial V}\right)_S = -{1\over \kappa_S}\, ,$$
-relacionado con el coeficiente de compresbilidad adiab\'atica.
-En condiciones adiab\'aticas para un gas ideal $PV^\gamma = {\rm C}^{te}$ con $\gamma = 1,4$.
-$$v_{\mathrm S}=\left({\gamma P\over \rho}\right)^{1/2} \, .$$
+$$K = -V \left({\partial P\over \partial V}\right)_S\,,$$
+relacionado con el coeficiente de compresibilidad adiab\'atica.
+En condiciones adiab\'aticas para un gas ideal $PV^\gamma = {\rm constante}$, con $\gamma = 1,4$.
+$$v_{\rm S} = \sqrt{\gamma P\over \rho}\,.$$
 Densidad del aire $\rho = 1,25$~kg~m$^{-3}$, $P = 1,013\cdot 10^5$~Pa, 
-$$v=\left({\gamma P\over \rho}\right)^{1/2} \approx 340~{\rm m s^{-1}}\, .$$
+$$v_{\rm S} = \sqrt{\gamma P\over \rho} \approx 340~{\rm m s^{-1}}\, .$$
 
 Si en la laringe, longitud de unos $L=15$~cm, se forma una onda estacionaria de longitud de onda $\lambda \approx 4L$, entonces la frecuencia es
-$$\nu \approx {340\over 0,6} \approx 600~{\rm Hz}\, .$$
+$$\nu = {v_{\rm S} \over \lambda} \approx {340\over 0,6} \approx 600~{\rm Hz}\, .$$
 La voz humana se encuentra entre los 80 y los 1100~Hz.\\
 
-{\bf  Experimento con Helio.} Cuando se toma algo de helio, es decir, cuando el aire de la garganta se sustituye por helio,
-la cavidad resonante, la laringe, sigue teniendo la misma longitud, por lo que la longitud de onda de las ondas estacionarias que se forman 
-en dicha cavidad es la misma que con el aire, modific\'andose la velocidad de propagaci\'on de la onda, pues cambia la densidad y cambia $\gamma$,
-y, por tanto, su frecuencia. Para el aire, con $M \approx 30$~g mol$^{-1}$, y para el helio, con $M ({\rm He}) \approx 4$~g mol$^{-1}$,
-la raz\'on de sus densidades es de $1/8$, por lo que la relaci\'on de las velocidades de propagaci\'on es unas 3 veces mayor en el helio que en el aire.
-Puesto que ahora $\lambda \nu ({\rm He}) \approx 3 v_{\mathrm s}$, la frecuencia $\nu ({\rm He}) \approx 3 \nu$, y el sonido emitido ser\'a m\'as agudo
+{\bf Experimento con helio.} Cuando se toma algo de helio, es decir, cuando el
+aire de la garganta se sustituye por helio, la cavidad resonante, la laringe,
+sigue teniendo las mismas dimensiones, por lo que la longitud de onda de las ondas
+estacionarias que se forman en dicha cavidad es la misma que con el aire. Se
+modifica la velocidad de propagaci\'on de la onda, y por tanto su frecuencia,
+pues cambian la densidad y $\gamma$. Para el aire, con $M \approx 30$~g mol$^{-1}$,
+y para el helio, con $M ({\rm He}) \approx 4$~g mol$^{-1}$, la raz\'on de sus
+densidades es de $1/8$, por lo que la relaci\'on de las velocidades de
+propagaci\'on es unas 3 veces mayor en el helio que en el aire.
+Puesto que ahora $\lambda \nu ({\rm He}) \approx 3 v_{\mathrm s}$, la frecuencia
+$\nu ({\rm He}) \approx 3 \nu$, y el sonido emitido ser\'a m\'as agudo
 que con aire.\\
 
 {\bf Resonancia en diapasones.} Resonancia ac\'ustica. Dos diapasones, con sus correspondientes cajas de resonancia, entran en resonancia, a trav\'es de las ondas sonoras producidas en una caja y enviadas a la otra, cuando su frecuencia de vibraci\'on es la misma. Una diferencia de 1 Hz en sus frecuencias de vibraci\'on y ya no resuenan.\\ 
