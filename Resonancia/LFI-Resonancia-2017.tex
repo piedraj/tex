@@ -109,9 +109,9 @@ Desarrollando la curva en serie de Taylor alrededor del punto de equilibrio, se 
 $$E_{\rm P}(x) = +{1\over 2}\Big| {{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, .$$
 Con la segunda ley de Newton expresada como
 %%%,  $ m a = - {\rm grad} \, E_{\rm P}(x)$, expresada como:
-$$m {{\rm d} x^2\over {\rm d} t^2} = - {{\rm d} E_{\rm P}(x)\over {\rm d} x}\, ,$$
+$$m {{\rm d}^2 x\over {\rm d} t^2} = - {{\rm d} E_{\rm P}(x)\over {\rm d} x}\, ,$$
 se tiene la ecuaci\'on diferencial del movimiento
-$$ {{\rm d} (x-x_{\rm e})^2\over {\rm d} t^2} + \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
+$$ {{\rm d}^2 (x-x_{\rm e})\over {\rm d} t^2} + \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
 Una posible soluci\'on\footnote{La funci\'on $f(x) = {\rm sin} \, x$ tiene la propiedad de que su segunda derivada es la misma funci\'on cambiada de signo $f''(x) = - f(x)$. La misma propiedad tiene la funci\'on ${\rm cos}\, x$.} de esta ecuaci\'on diferencial es de la forma
 $$(x-x_{\rm e})(t) = A\,  \sin\, (\omega t + \phi) \,;\,\, (x-x_{\rm e})(t) = A\,  \cos\, (\omega t + \phi') $$
 donde $A$ -- que depende de la energ\'ia inicial de la perturbaci\'on --  es la amplitud de la oscilaci\'on, $\omega = 2\pi/T$ es su frecuencia angular -- que depender\'a de condiciones geom\'etricas y f\'isicas --, $T$ es el per\'iodo y $\phi$ la fase inicial.\\ 
@@ -129,9 +129,9 @@ En un equilibrio inestable el sistema se sit\'ua en un m\'aximo de un potencial.
 Se tiene que para un potencial de par\'abola c\'oncava hacia abajo:
 $$E_{\rm P}(x) = -{1\over 2}\Big| {{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}(x-x_{\rm e})^2 + \cdots\, .$$
 Con la Segunda Ley de Newton expresada como
-$$m {{\rm d} x^2\over {\rm d} t^2} = - {{\rm d}  E_{\rm P}(x)\over {\rm d}  x}\, ,$$
+$$m {{\rm d}^2 x\over {\rm d} t^2} = - {{\rm d}  E_{\rm P}(x)\over {\rm d}  x}\, ,$$
 se tiene
-$$ {{\rm d} (x-x_{\rm e})^2\over {\rm d} t^2} - \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
+$$ {{\rm d}^2 (x-x_{\rm e})\over {\rm d} t^2} - \omega^2 (x-x_{\rm e}) = 0 \,;\,\, \omega^2 = m^{-1}\Big|{{\rm d}^2 E_{\rm P}(x)\over {\rm d}^2 x}\Big|_{x=x_{\rm e}}\, .$$
 La soluci\'on\footnote{La funci\'on $g(x) = \exp  \, x$ tiene la propiedad de que su segunda derivada es la misma funci\'on $f''(x) =  f(x)$.} de esta ecuaci\'on diferencial es:
 $$(x-x_{\rm e})(t) = A\,  \exp\, (\omega t + \phi)\, .$$
 El sistema se aleja del equilibrio una vez es perturbado.\\
@@ -168,9 +168,13 @@ se mueve con velocidad angular $\omega_i$, se tienen las ecuaciones:
 \end{eqnarray}
 Con estas ecuaciones se calculan $\theta_0$ y $\phi$.
 
-Per\'iodo de un p\'endulo matem\'atico. 
+Per\'iodo de un p\'endulo matem\'atico:
 $$T = 2 \pi \sqrt{l\over g}\, .$$
 %\item Demostrar que dos p\'endulos de igual longitud pero con diferentes masas puntuales tienen (aproximadamente) el mismo per\'iodo.
+
+\item {\bf P\'endulo de gravedad variable.} Calcular y medir el per\'iodo de un p\'endulo de gravedad variable:
+$$T(\alpha) = 2\pi\sqrt{l \over g\cos\alpha}\,.$$
+Cuando $\alpha = 1,31$ rad ($75^\circ$), $\cos\alpha = 0,25$ y el per\'iodo debe ser el doble que cuando el p\'endulo se encuentra en vertical.
 
 \item {\bf P\'endulo f\'isico.}  Per\'iodo de un p\'endulo f\'isico en forma de barra
 (momento de inercia respecto de un eje perpendicular que pasa por su centro, $I_0 = {1\over 12}mL^2$, y momento de inercia respecto de un eje perpendicular que pasa por uno de sus extremos, $I'= m L^2/3$):
@@ -219,17 +223,12 @@ Su per\'iodo es menor, es decir, oscila m\'as rapidamente, que el de un anillo c
 %ascienda, con lo que tienda a descender. Si en el proceso el centro de gravedad desciende, entonces seguir‡ descendiendo y el equilibrio ya no ser‡ estable. 
 
 Estudiar los per\'iodos de los dos modos normales del tentetieso \'aguila. Para la primera oscilaci\'on, la distancia al eje de giro es de unos $l_1=6,5$~cm. La distancia entre el punto de apoyo y el centro de gravedad se estima en $d=1$~cm. Para la oscilaci\'on m\'as r\'apida, la distancia al eje se estima en unos $l_2=2,5$~cm.
-
 Con estos datos
 $$T_1 = 2 \pi \sqrt{ml_1^2\over m g d} \approx 1,3~{\rm s}\, .$$
 Para 10 per\'iodos se esperan unos 13~s.
 Para la oscilaci\'on r\'apida, 
 $$T_2 = 2 \pi \sqrt{ml_2^2\over m g d} \approx 0,5~{\rm s}\, .$$
 
-
-\item {\bf P\'endulo de gravedad variable.} Calcular y medir el per\'iodo de un p\'endulo de gravedad variable:
-$$T(\alpha) = 2\pi\sqrt{l \over g\cos\alpha}\,.$$
-Cuando $\alpha = 1,31$ rad ($75^\circ$), $\cos\alpha = 0,25$ y el per\'iodo debe ser el doble que cuando el p\'endulo se encuentra en vertical.
 
 \begin{figure}[htb]
 \begin{center}
@@ -482,7 +481,7 @@ La fuerza forzante termina por imponer su frecuencia al sistema, pero, incluso p
 
 {\bf  P\'endulos resonantes d\'ebilmente acoplados.} Tres p\'endulos matem\'aticos cuelgan de la misma barra. Dos tienen la misma longitud y el tercero no. Cuando oscila  uno de los del par, ambos terminan por oscilar.\\
 
- {\bf  P\'endulo de Wilbeforce.} P\'endulo de muelle y p\'endulo de torsi\'on. Acoplamiento entre los modos de oscilaci\'on y los modos de torsi\'on.\\
+ {\bf  P\'endulo de Wilberforce.} P\'endulo de muelle y p\'endulo de torsi\'on. Acoplamiento entre los modos de oscilaci\'on y los modos de torsi\'on.\\
 
  {\bf  Resonancia en carrito con dos muelles.}  Si el carrito con los dos muelles se fuerza con una fuerza sinusoidal, si la frecuencia de la fuerza es la del carrito, entonces entra en resonancia, de tal forma que si no se interrumpe la fuerza externa, el sistema se destruye. 
  
