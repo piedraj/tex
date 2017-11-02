@@ -45,12 +45,12 @@ coseno. Por tanto, el movimiento peri\'odico m\'as simple ser\'a aquel en el que
 las coordenadas del punto material var\'ien seg\'un la ley
 $$x(t) = A\,\cos \,(\omega t + \alpha)\,,$$
 donde $A$ es la amplitud del movimiento, que va a depender de las condiciones
-iniciales de posici\'on y velocidad, $\omega$ es la frecuencia angular, en
+iniciales, $\omega$ es la frecuencia angular, en
 radianes por segundo, 
 $$\omega = 2\pi\nu = {2\pi\over T}\,,$$
-y $\alpha$ la fase inicial, que tambi\'en depende de las condiciones iniciales.
+y $\alpha$ es la fase inicial, que tambi\'en depende de las condiciones iniciales.
 Para la velocidad de la part\'icula se tiene que
-$$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) = \omega A\,  \cos \, (\omega t + \alpha + {\pi/2}) \, .$$
+$$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) = \omega A \cos \, (\omega t + \alpha + {\pi/2}) \, .$$
 
 \begin{figure}[htb]
 \begin{center}
@@ -61,15 +61,15 @@ $$ v(t) = {{\rm d} x(t)\over {\rm d} t}= -\omega A \sin \, (\omega t + \alpha) =
 \caption[]{\label{fig:pendulmat}{\it P\'endulo matem\'atico}. Una bola pesada unida a una barra ligera oscila, aproximadamente, en forma arm\'onica.}
 \end{figure}
 
-La variaci\'on de la velocidad adelanta en fase a la variaci\'on de la posici\'on. 
-Conocidas las condiciones iniciales $x(0) = x_0$ y $v(0)=v_0$, se determinan $A$ y $\alpha$ para el sistema dado.
+La variaci\'on de la velocidad adelanta en fase a la variaci\'on de la posici\'on.
+Conocidas las condiciones iniciales $x(0) = x_0$ y $v(0)=v_0$ se determinan $A$ y $\alpha$ para el sistema dado.
 Para la aceleraci\'on de la part\'icula se tiene
-$$ a (t) = {{\rm d} v(t)\over {\rm d} t}= -\omega^2 A \, \cos \, (\omega t + \alpha) \, .$$
+$$ a(t) = {{\rm d} v(t)\over {\rm d} t}= -\omega^2 A \, \cos \, (\omega t + \alpha) = -\omega^2 x(t)\, .$$
 Multiplicando la aceleraci\'on por la masa, se tiene que
-$$F (t) = m a(t) = - m \omega^2 x(t)\, .$$
+$$F = m a(t) = - m \omega^2 x(t)\, .$$
 Por tanto, para que la part\'icula realice oscilaciones arm\'onicas, la fuerza que act\'ua sobre ella debe ser proporcional al desplazamiento de la part\'icu\-la y debe estar dirigida en sentido opuesto a ese desplazamiento. Este tipo de fuerza se denomina {\it fuerza recuperadora} y es caracter\'istica de los movimientos oscilatorios. La ecuaci\'on diferencial caracter\'istica de una oscilaci\'on arm\'onica es
 $${{\rm d}^2 x(t) \over {\rm d} t^2} + \omega^2 x(t) = 0\, .$$
-Para una fuerza caracter\'istica $F = - k  x (t)$, se tendr\'a que $\omega^2 = k/m$.
+Para una fuerza caracter\'istica $F = - k  x (t)$ se tendr\'a que $\omega^2 = k/m$.
 Las oscilaciones de un sistema que, despu\'es de recibir un impulso inicial\footnote{Un impulso inicial incorporar\'a cierta energ\'ia al sistema.},
 se abandona a s\'i mismo, se denominan {\it oscilaciones propias}.  
 
@@ -478,14 +478,11 @@ con la amplitud $A$ del estado estacionario dada por
 $$A = {F_0/m \over \sqrt{\left({{\tilde \omega}}^2 - \omega_0^2\right)^2 + 4{\tilde \omega}^2\gamma^2}}\, .$$
 La fuerza forzante termina por imponer su frecuencia al sistema, pero, incluso para ${\tilde \omega} = \omega_0$, termina por alcanzarse una amplitud tal que la energ\'ia que cede la fuerza forzante al sistema se disipa por rozamiento (trabajo disipativo o calor) al exterior.\\ 
 
+{\bf P\'endulos resonantes d\'ebilmente acoplados.} Tres p\'endulos matem\'aticos cuelgan de la misma barra. Dos tienen la misma longitud y el tercero no. Cuando oscila  uno de los del par, ambos terminan por oscilar.\\
 
-{\bf  P\'endulos resonantes d\'ebilmente acoplados.} Tres p\'endulos matem\'aticos cuelgan de la misma barra. Dos tienen la misma longitud y el tercero no. Cuando oscila  uno de los del par, ambos terminan por oscilar.\\
+{\bf P\'endulo de Wilberforce.} P\'endulo de muelle y p\'endulo de torsi\'on. Acoplamiento entre los modos de oscilaci\'on y los modos de torsi\'on.\\
 
- {\bf  P\'endulo de Wilberforce.} P\'endulo de muelle y p\'endulo de torsi\'on. Acoplamiento entre los modos de oscilaci\'on y los modos de torsi\'on.\\
-
- {\bf  Resonancia en carrito con dos muelles.}  Si el carrito con los dos muelles se fuerza con una fuerza sinusoidal, si la frecuencia de la fuerza es la del carrito, entonces entra en resonancia, de tal forma que si no se interrumpe la fuerza externa, el sistema se destruye. 
- 
-El movimiento oscilatorio del carrito forzado se puede amortiguar con un im\'an de neodimio, utilizando la Ley de Lenz. 
+{\bf Resonancia en carrito con dos muelles.}  Si el carrito con los dos muelles se fuerza con una fuerza sinusoidal, si la frecuencia de la fuerza es la del carrito, entonces entra en resonancia, de tal forma que si no se interrumpe la fuerza externa, el sistema se destruye. El movimiento oscilatorio del carrito forzado se puede amortiguar con un im\'an de neodimio, utilizando la Ley de Lenz. 
 
 
 %\section{Ondas estacionarias transversales}
@@ -550,12 +547,20 @@ densidades es de $1/8$, por lo que la relaci\'on de las velocidades de
 propagaci\'on es unas 3 veces mayor en el helio que en el aire.
 Puesto que ahora $\lambda \nu ({\rm He}) \approx 3 v_{\mathrm s}$, la frecuencia
 $\nu ({\rm He}) \approx 3 \nu$, y el sonido emitido ser\'a m\'as agudo
-que con aire.\\
+que con aire.
 
-{\bf Resonancia en diapasones.} Resonancia ac\'ustica. Dos diapasones, con sus correspondientes cajas de resonancia, entran en resonancia, a trav\'es de las ondas sonoras producidas en una caja y enviadas a la otra, cuando su frecuencia de vibraci\'on es la misma. Una diferencia de 1 Hz en sus frecuencias de vibraci\'on y ya no resuenan.\\ 
-
-{\bf Barra cantante}. Si se utiliza una barra de aluminio, de longitud $L\approx 50$~cm,  para producir ondas sonoras estacionarias, se tiene que si se toma por el medio con un dedo,
-la longitud de onda de la onda estacionaria es $\lambda = 2L$. El sonido se transmite en el aluminio con una velocidad de $v_{\mathrm s} \approx 5100$~m s$^{-1}$, por lo que se obtienen frecuencias de 5000~Hz.
+%%% J.Piedra %%% {\bf Resonancia en diapasones.} Resonancia ac\'ustica. Dos diapasones, con sus
+%%% J.Piedra %%% correspondientes cajas de resonancia, entran en resonancia, a trav\'es de las
+%%% J.Piedra %%% ondas sonoras producidas en una caja y enviadas a la otra, cuando su frecuencia
+%%% J.Piedra %%% de vibraci\'on es la misma. Una diferencia de 1 Hz en sus frecuencias de
+%%% J.Piedra %%% vibraci\'on y ya no resuenan.\\ 
+%%% J.Piedra %%% 
+%%% J.Piedra %%% {\bf Barra cantante}. Si se utiliza una barra de aluminio, de longitud
+%%% J.Piedra %%% $L\approx 50$~cm, para producir ondas sonoras estacionarias, se tiene que si se
+%%% J.Piedra %%% toma por el medio con un dedo, la longitud de onda de la onda estacionaria es
+%%% J.Piedra %%% $\lambda = 2L$. El sonido se transmite en el aluminio con una velocidad de
+%%% J.Piedra %%% $v_{\mathrm s} \approx 5100$~m s$^{-1}$, por lo que se obtienen frecuencias
+%%% J.Piedra %%% de 5000~Hz.
 
 %\section{Cubeta de ondas}
 %
@@ -585,18 +590,25 @@ la longitud de onda de la onda estacionaria es $\lambda = 2L$. El sonido se tran
 \section{Resonancia param\'etrica}
 
 Las oscilaciones no amortiguadas pueden excitarse no s\'olo por una fuerza peri\'odica externa, sino tambi\'en por la variaci\'on peri\'odica de los par\'ametros del sistema oscilatorio. Esta excitaci\'on de las oscilaciones se denomina resonancia param\'etrica. Como ejemplos se pueden citar el balanceo automantenido en un columpio o el botafumeiro de la catedral de Santiago de Compostela.  
-
-\begin{figure}[htb]
-\begin{center}
-\hspace*{0.0cm}
-\includegraphics[width=0.6\textwidth]{figuras/RESONANCIA-PARAMETRICA.png}
-\end{center}
-\vspace*{-0.6cm}
-\caption[]{\label{fig:resoparame}{\it Resonancia param\'etrica.} Un p\'endulo oscila al final de una cadena que cada cierto tiempo es acortada.
-  Si el per\'iodo de acortamiento de la cadena y el per\'iodo propio del p\'endulo se sincronizan, el p\'endulo entrar\'a en resonancia.}
-\end{figure}
-
-En un columpio la persona que oscila puede mantener, e incluso aumentar, la amplitud de su oscilaci\'on si cuando alcanza la m\'inima altura recoge las piernas bajo el asiento. Con este movimiento, la persona hace que se eleve su centro de gravedad disminuyendo su momento de inercia. Puesto que en ese punto se conserva el momento angular, aumenta su velocidad angular y su energ\'ia cin\'etica de rotaci\'on,  incorporando energ\'ia al sistema y haciendo que aumente la amplitud de la oscilaci\'on. Esta energ\'ia cin\'etica adicional proviene, por supuesto, del trabajo que realizan sus m\'usculos contra la gravedad para elevar las piernas\footnote{Si la persona est\'a de pie sobre el asiento del columpio, debe elevarse en la posici\'on baja y agacharse en las posiciones altas.}.
+%%% J.Piedra %%% 
+%%% J.Piedra %%% \begin{figure}[htb]
+%%% J.Piedra %%% \begin{center}
+%%% J.Piedra %%% \hspace*{0.0cm}
+%%% J.Piedra %%% \includegraphics[width=0.6\textwidth]{figuras/RESONANCIA-PARAMETRICA.png}
+%%% J.Piedra %%% \end{center}
+%%% J.Piedra %%% \vspace*{-0.6cm}
+%%% J.Piedra %%% \caption[]{\label{fig:resoparame}{\it Resonancia param\'etrica.} Un p\'endulo oscila al final de una cadena que cada cierto tiempo es acortada.
+%%% J.Piedra %%%   Si el per\'iodo de acortamiento de la cadena y el per\'iodo propio del p\'endulo se sincronizan, el p\'endulo entrar\'a en resonancia.}
+%%% J.Piedra %%% \end{figure}
+%%% J.Piedra %%% 
+En un columpio la persona que oscila puede mantener, e incluso aumentar, la amplitud de su oscilaci\'on,
+si cuando alcanza la m\'inima altura recoge las piernas bajo el asiento. Con este movimiento, la persona
+hace que se eleve su centro de gravedad, disminuyendo su momento de inercia. Puesto que en ese punto se
+conserva el momento angular, aumentan su velocidad angular y su energ\'ia cin\'etica de rotaci\'on,
+incorporando energ\'ia al sistema y haciendo que aumente la amplitud de la oscilaci\'on. Esta energ\'ia
+cin\'etica adicional proviene, por supuesto, del trabajo que realizan sus m\'usculos contra la gravedad
+para elevar las piernas\footnote{Si la persona est\'a de pie sobre el asiento del columpio, debe elevarse
+en la posici\'on baja y agacharse en las posiciones altas.}.
 
 En el caso del botafumeiro, cada vez que el p\'endulo pasa por la vertical, en su posici\'on m\'as baja, se le da un peque\~no impulso que lo hace elevarse una altura $a$ y se deja ir la cuerda en $a \, \cos \phi_0$ cuando llega a su posici\'on m\'as alta. En cada ciclo de elevaci\'on y descenso se realiza un trabajo ($\cos\,  \phi \approx 1 - \phi^2/2$)
 $$m g a (1-\cos \, \phi_0) \approx {1\over 2} m g a \phi^2_0\, .$$
