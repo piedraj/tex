@@ -124,11 +124,24 @@ of the event is performed for several signal (ST and TT) and background
 permutations of the b-tagged jets to be associated with the decay products of
 the Higgs boson or the top quark. The reconstructed kinematic variables for each
 permutation are then fed  into a multivariate analysis that uses a BDT, trained
-to distinguish the correct from the wrong b jet assignments. Some of the most
-discriminating BDT input variables can be seen in Figure~\ref{fig:TOP-17-003_Figure_002}.
-
-\ref{fig:TOP-17-003_Figures_006-007}
-\ref{fig:fcnc_summarybsm_may18}
+to distinguish the correct from the wrong b jet assignments. In addition,
+kinematic variables from the event reconstruction are used to construct several
+BDTs to suppress backgrounds. The BDTs are trained for each jet multiplicity
+category to identify signal events that are generated either for
+${\rm \kappa_{Hut}}$ (Hut) or ${\rm \kappa_{Hct}}$ (Hct) coupling against the
+sum of all background events. Separate trainings of the BDT for Hut and Hct are
+done. Distributions for some of the most discriminating BDT input variables,
+in the category with three jets, all of them b-tagged, can be seen in
+Figure~\ref{fig:TOP-17-003_Figure_002}. The final observable used to extract
+signal events is defined as the BDT score distribution. The resultant observed
+(expected) 95\% CL exclusion limits on top quark FCNC decay branching fractions
+are ${\cal B}({\rm t \to uH}) < 0.47\%~(0.34\%)$ and
+${\cal B}({\rm t \to cH}) < 0.47\%~(0.44\%)$. Two-dimensional limits are also
+shown in~\ref{fig:TOP-17-003_Figures_006-007}. We define a signal strength
+parameter $\mu = \sigma/\sigma_{\rm sig}$, where $\sigma$ is the cross section
+excluded at 95\% CL and $\sigma_{\rm sig}$ is the predicted cross section for
+signal. A maximum likelihood fit is performed for the signal strength, and is
+shown in Figure~\ref{fig:TOP-17-003_Figures_006-007}.
 
 
 \begin{figure}[htb]
@@ -160,19 +173,6 @@ discriminating BDT input variables can be seen in Figure~\ref{fig:TOP-17-003_Fig
 \end{figure}
 
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{figures/fcnc_summarybsm_may18}
-\caption{
-  Summary of the current 95\% confidence level observed limits on the branching
-  ratios of the top quark decays via flavour changing neutral currents to a
-  quark and a neutral boson by the ATLAS and CMS Collaborations compared to
-  several new physics models. 
-}
-\label{fig:fcnc_summarybsm_may18}
-\end{figure}
-
-
 %-------------------------------------------------------------------------------
 \section{Angular observables in ${\rm B^+ \to K^+\mu^+\mu^-}$}
 %-------------------------------------------------------------------------------
@@ -194,8 +194,6 @@ discriminating BDT input variables can be seen in Figure~\ref{fig:TOP-17-003_Fig
 }
 \label{fig:BPH-15-001_Figures_003-004}
 \end{figure}
-
-
 
 
 %-------------------------------------------------------------------------------
@@ -230,7 +228,24 @@ discriminating BDT input variables can be seen in Figure~\ref{fig:TOP-17-003_Fig
 \section{Conclusions}
 %-------------------------------------------------------------------------------
 
-To be filled.
+A CMS and ATLAS summary of the current 95\% CL observed limits on the branching
+ratios of the top quark decays via FCNC to a quark and a neutral boson is shown
+in Figure~\ref{fig:fcnc_summarybsm_may18}.
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{figures/fcnc_summarybsm_may18}
+\caption{
+  Summary of the current 95\% confidence level observed limits on the branching
+  ratios of the top quark decays via flavour changing neutral currents to a
+  quark and a neutral boson by the ATLAS and CMS Collaborations compared to
+  several new physics models. 
+}
+\label{fig:fcnc_summarybsm_may18}
+\end{figure}
+
+
 
 
 %-------------------------------------------------------------------------------
