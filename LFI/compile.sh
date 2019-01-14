@@ -2,8 +2,8 @@
 
 if [ $# -lt 1 ]; then
     echo "  "
-    echo " ./compile.sh LFI-Resonancia-2017.tex"
-    echo " ./compile.sh LFI-Resonancia-2017-Cuestionario.tex"
+    echo " ./compile.sh LFI-Resonancia.tex"
+    echo " ./compile.sh LFI-Resonancia-Cuestionario.tex"
     echo "  "
     exit -1
 fi
